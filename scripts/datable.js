@@ -3,13 +3,13 @@
 const jogost = [
     {time1:"time1", time2: "time2", rounds1: 12, rounds2:10, stats:[
             {nome:"Zks", K:12, D:10, A:5, KD:1.80, ADR:111, HS: 0.79, KAST: 0.79, Rating: 1.64},
-            {nome:"Allan", K:12, D:10, A:5, KD:1.80, ADR:118, HS: 0.80, KAST:0.79, Rating: 1.80},
+            {nome:"ALN", K:12, D:10, A:5, KD:1.80, ADR:118, HS: 0.80, KAST:0.79, Rating: 1.80},
             {nome:"Jimmy", K:12, D:10, A:5, KD:1.80, ADR:125, HS: 0.65, KAST: 0.79, Rating: 1.64}
         ]
     },
     {time1:"time2", time2: "time4", rounds1: 9, rounds2:12, stats:[
             {nome:"Zks", K:12, D:10, A:5, KD:1.80, ADR:111,  HS: 0.45, KAST: 0.79, Rating: 1.64},
-            {nome:"Allan", K:12, D:10, A:5, KD:1.80, ADR:118, HS: 0.79, KAST:0.72, Rating: 1.80},
+            {nome:"ALN", K:12, D:10, A:5, KD:1.80, ADR:118, HS: 0.79, KAST:0.72, Rating: 1.80},
             {nome:"Jimmy", K:12, D:10, A:5, KD:1.80, ADR:125, HS: 0.75, KAST: 0.72, Rating: 1.64}
         ]
     },
@@ -19,8 +19,25 @@ const jogost = [
 
 let geralzaomap = {};
 geralzaomap['Zks'] = { K:0, D:0, A:0, KD:0, ADR:0, HS: 0, KAST: 0, Rating: 0}
-geralzaomap['Allan'] = { K:0, D:0, A:0, KD:0, ADR:0, HS: 0, KAST: 0, Rating: 0}
+geralzaomap['ALN'] = { K:0, D:0, A:0, KD:0, ADR:0, HS: 0, KAST: 0, Rating: 0}
 geralzaomap['Jimmy'] = { K:0, D:0, A:0, KD:0, ADR:0, HS: 0, KAST: 0, Rating: 0}
+geralzaomap['Zé Gotinha'] = { K:0, D:0, A:0, KD:0, ADR:0, HS: 0, KAST: 0, Rating: 0}
+geralzaomap['M4NO'] = { K:0, D:0, A:0, KD:0, ADR:0, HS: 0, KAST: 0, Rating: 0}
+geralzaomap['IAN'] = { K:0, D:0, A:0, KD:0, ADR:0, HS: 0, KAST: 0, Rating: 0}
+geralzaomap['Lagatirxa'] = { K:0, D:0, A:0, KD:0, ADR:0, HS: 0, KAST: 0, Rating: 0}
+geralzaomap['Phael'] = { K:0, D:0, A:0, KD:0, ADR:0, HS: 0, KAST: 0, Rating: 0}
+geralzaomap['Silence'] = { K:0, D:0, A:0, KD:0, ADR:0, HS: 0, KAST: 0, Rating: 0}
+geralzaomap['Chicken'] = { K:0, D:0, A:0, KD:0, ADR:0, HS: 0, KAST: 0, Rating: 0}
+geralzaomap['Araujo'] = { K:0, D:0, A:0, KD:0, ADR:0, HS: 0, KAST: 0, Rating: 0}
+geralzaomap['BozozoGDLK'] = { K:0, D:0, A:0, KD:0, ADR:0, HS: 0, KAST: 0, Rating: 0}
+geralzaomap['Vegiputo'] = { K:0, D:0, A:0, KD:0, ADR:0, HS: 0, KAST: 0, Rating: 0}
+geralzaomap['Rinaldi'] = { K:0, D:0, A:0, KD:0, ADR:0, HS: 0, KAST: 0, Rating: 0}
+geralzaomap['Jubileu'] = { K:0, D:0, A:0, KD:0, ADR:0, HS: 0, KAST: 0, Rating: 0}
+geralzaomap['Gusta'] = { K:0, D:0, A:0, KD:0, ADR:0, HS: 0, KAST: 0, Rating: 0}
+geralzaomap['Mira Fibonacci'] = { K:0, D:0, A:0, KD:0, ADR:0, HS: 0, KAST: 0, Rating: 0}
+geralzaomap['Marcelinho Contos Eróticos'] = { K:0, D:0, A:0, KD:0, ADR:0, HS: 0, KAST: 0, Rating: 0} 
+geralzaomap['Meu saco'] = { K:0, D:0, A:0, KD:0, ADR:0, HS: 0, KAST: 0, Rating: 0} 
+geralzaomap['Bin'] = { K:0, D:0, A:0, KD:0, ADR:0, HS: 0, KAST: 0, Rating: 0} 
 
 jogost.forEach((jogo) => {
     jogo.stats.forEach((player) => {
@@ -41,7 +58,6 @@ jogost.forEach((jogo) => {
 let geralzaoarray = [];
 
 for (let ite in geralzaomap){
-    if(geralzaoarray.length < 3){
         geralzaoarray.push({
             nome : ite,
             K : geralzaomap[ite].K,
@@ -53,7 +69,6 @@ for (let ite in geralzaomap){
             KAST : geralzaomap[ite].KAST,
             Rating : geralzaomap[ite].Rating
         })
-    }
 }
 
 
