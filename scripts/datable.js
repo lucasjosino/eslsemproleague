@@ -61,6 +61,8 @@ let Rating = geralzaoarray.sort(function(a, b){return a.Rating < b.Rating;});
 let ADR = geralzaoarray.sort(function(a, b){return a.ADR < b.ADR;});
 let KAST = geralzaoarray.sort(function(a, b){return a.KAST < b.KAST;});
 
+console.log(geralzaoarray);
+
 
 let tableLine = document.getElementById("tablePlayer");
 
