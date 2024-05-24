@@ -40,18 +40,20 @@ jogost.forEach((jogo) => {
 
 let geralzaoarray = [];
 
-for (let ite in geralzaomap) {
-    geralzaoarray.push({
-        nome : ite,
-        K : geralzaomap[ite].K,
-        A : geralzaomap[ite].A,
-        D : geralzaomap[ite].D, 
-        KD : geralzaomap[ite].KD,
-        ADR : geralzaomap[ite].ADR,
-        HS : geralzaomap[ite].HS,
-        KAST : geralzaomap[ite].KAST,
-        Rating : geralzaomap[ite].Rating
-    })
+for (let ite in geralzaomap){
+    if(geralzaoarray.length < 3){
+        geralzaoarray.push({
+            nome : ite,
+            K : geralzaomap[ite].K,
+            A : geralzaomap[ite].A,
+            D : geralzaomap[ite].D, 
+            KD : geralzaomap[ite].KD,
+            ADR : geralzaomap[ite].ADR,
+            HS : geralzaomap[ite].HS,
+            KAST : geralzaomap[ite].KAST,
+            Rating : geralzaomap[ite].Rating
+        })
+    }
 }
 
 
