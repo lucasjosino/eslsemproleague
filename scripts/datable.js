@@ -67,6 +67,8 @@ console.log(geralzaoarray);
 let tableLine = document.getElementById("tablePlayer");
 
 geralzaoarray.forEach((element, index) => {
+    console.log("index:"+ index);
+    console.log("element:"+ element);
     let tr = document.createElement("tr");
     for (let i in element) {
         let td = document.createElement("td");
